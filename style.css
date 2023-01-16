@@ -1,0 +1,57 @@
+.big{
+    background-color: blue;
+    width: 700px;
+    height: 600px;
+    position:relative;
+    transition-property:all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transition-delay: 0.2s;
+}
+.small{
+    background-color: rgb(241, 145, 1);
+    width: 120px;
+    height: 90px;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition-property:all;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 0.4s;
+}
+.big:hover{
+background-color: green;
+}
+.small:hover{
+    transform: translate(-50%, -50%) rotate(123deg);
+}
+
+
+.xe{
+animation: xis-animacia 5s infinite;
+position: absolute;
+opacity: 0.3;
+}
+.animation{
+    position: relative;
+}
+.section{
+    height: 2000px;
+}
+.xe:hover{
+    opacity: 1;
+}
+
+
+
+
+@keyframes xis-animacia {
+    0% {  left: 60px; top: -400px; transform: rotate(45deg); }
+    20% {left: 450px;top: -300px; transform: rotate(360deg);}
+    40% {left: 700px; top: -500px; transform: rotate(45deg);}
+    60% {left: -50px; top: -400px; transform: rotate(360deg);}
+    80% {left: -100px; top: -300px; transform: rotate(45deg);}
+    100% {left: 850px; top: -400px; transform: rotate(360deg);}
+}
